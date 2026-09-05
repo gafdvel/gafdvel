@@ -1,0 +1,19 @@
+# PyInstaller / Python junk
+build/
+dist/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Binary: ship via GitHub Releases only
+gafdvel.exe
+
+# Editor / OS
+.vscode/
+*.swp
+*~
+desktop.ini
+*.pfx
+*.key
+*.pem
