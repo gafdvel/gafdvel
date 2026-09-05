@@ -1,0 +1,13 @@
+---
+description: gafdvel 卸载器项目约定（体积/图标/打包/目录整洁）
+alwaysApply: true
+---
+
+# gafdvel 项目规则
+
+- 源码以 `gafdvel.py` 为主；不要拆成无必要多文件，除非用户明确要求。
+- 改完可运行逻辑后，用户要求打包时用根目录 `打包.bat`；产物只留根目录 `gafdvel.exe`，删掉 `build/`、`dist/`、`__pycache__/`。
+- `VERSION` 与 `file_version_info.txt` 必须同步 bump。
+- 体积：定位失败 →「未知」，禁止伪「磁盘实测 0 B」；WinGet Packages 可作安装目录；InstallShield 缓存不算体积根；图标/卸载 exe 存在则信任其父目录（勿因中文名与代码目录名不符而拒）。
+- 图标：黑白双底 alpha；禁止品红色键抠图。
+- 回复用简体中文；少写废话，先做后说。
